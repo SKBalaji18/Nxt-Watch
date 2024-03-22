@@ -4,11 +4,22 @@ import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
 import NavigationSideBar from '../NavigationSideBar'
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+import FailureView from '../FailureView'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 import PlayVideoView from '../PlayVideoView'
 
 import NxtWatchContext from '../../context/NxtWatchContext'
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 import {
   VideoDetailViewContainer,
   LoaderContainer,
@@ -18,6 +29,12 @@ import {
   FailedNote,
   RetryButton,
 } from './styledComponents'
+<<<<<<< HEAD
+=======
+=======
+import {VideoDetailViewContainer, LoaderContainer} from './styledComponents'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -97,8 +114,18 @@ class VideoItemDetails extends Component {
   }
 
   renderLoadingView = () => (
+<<<<<<< HEAD
     <LoaderContainer data-testid="loader">
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+=======
+<<<<<<< HEAD
+    <LoaderContainer data-testid='loader'>
+      <Loader type='ThreeDots' color='#0b69ff' height='50' width='50' />
+=======
+    <LoaderContainer data-testid="loader">
+      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
     </LoaderContainer>
   )
 
@@ -120,6 +147,10 @@ class VideoItemDetails extends Component {
     this.getVideoDetails()
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   renderFailureView = () => (
     <NxtWatchContext.Consumer>
       {value => {
@@ -134,7 +165,11 @@ class VideoItemDetails extends Component {
 
         return (
           <FailedView>
+<<<<<<< HEAD
             <FailedImage src={FailureImageUrl} alt="failure view" />
+=======
+            <FailedImage src={FailureImageUrl} alt='failure view' />
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
             <FailedHeading headingColor={headingColor}>
               Oops! Something Went Wrong
             </FailedHeading>
@@ -142,7 +177,11 @@ class VideoItemDetails extends Component {
               We are having some trouble to complete your request. <br /> Please
               try again later.
             </FailedNote>
+<<<<<<< HEAD
             <RetryButton type="button" onClick={this.onRetry}>
+=======
+            <RetryButton type='button' onClick={this.onRetry}>
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
               Retry
             </RetryButton>
           </FailedView>
@@ -150,6 +189,12 @@ class VideoItemDetails extends Component {
       }}
     </NxtWatchContext.Consumer>
   )
+<<<<<<< HEAD
+=======
+=======
+  renderFailureView = () => <FailureView onRetry={this.onRetry} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
   renderVideoDetailView = () => {
     const {apiStatus} = this.state
@@ -178,7 +223,15 @@ class VideoItemDetails extends Component {
               <Header />
               <NavigationSideBar />
               <VideoDetailViewContainer
+<<<<<<< HEAD
                 data-testid="videoItemDetails"
+=======
+<<<<<<< HEAD
+                data-testid='videoItemDetails'
+=======
+                data-testid="videoItemDetails"
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
                 bgColor={bgColor}
               >
                 {this.renderVideoDetailView()}

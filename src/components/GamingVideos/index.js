@@ -7,6 +7,13 @@ import {SiYoutubegaming} from 'react-icons/si'
 import Header from '../Header'
 import NavigationSideBar from '../NavigationSideBar'
 import NxtWatchContext from '../../context/NxtWatchContext'
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+import FailureView from '../FailureView'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 import GameVideoCard from '../GameVideoCard'
 
 import {
@@ -16,11 +23,20 @@ import {
   GamingVideoList,
   GamingText,
   LoaderContainer,
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   FailedView,
   FailedImage,
   FailedHeading,
   FailedNote,
   RetryButton,
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 } from './styledComponents'
 
 const apiStatusConstants = {
@@ -89,6 +105,10 @@ class GamingVideos extends Component {
     this.getVideos()
   }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   renderFailureView = () => (
     <NxtWatchContext.Consumer>
       {value => {
@@ -119,6 +139,12 @@ class GamingVideos extends Component {
       }}
     </NxtWatchContext.Consumer>
   )
+<<<<<<< HEAD
+=======
+=======
+  renderFailureView = () => <FailureView onRetry={this.onRetry} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
+>>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
   renderGamingVideos = () => {
     const {apiStatus} = this.state
