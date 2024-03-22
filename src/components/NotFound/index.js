@@ -27,7 +27,11 @@ const NotFound = () => (
           <NavigationSideBar />
           <NotFoundContainer bgColor={bgColor}>
             <NotFoundVideosView>
+<<<<<<< HEAD
               <NotFoundVideosImage src={notFoundImageUrl} alt="not found" />
+=======
+              <NotFoundVideosImage src={notFoundImageUrl} alt='not found' />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
               <NotFoundVideosHeading headingColor={headingColor}>
                 Page Not Found
               </NotFoundVideosHeading>

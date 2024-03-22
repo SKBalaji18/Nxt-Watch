@@ -1,24 +1,5 @@
 import styled from 'styled-components'
 
-export const VideoDetailViewContainer = styled.div`
-  background-color: ${props => props.bgColor};
-  min-height: 100vh;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  overflow-y: auto;
-  @media screen and (min-width: 768px) {
-    margin-left: 250px;
-    margin-bottom: 0px;
-  }
-`
-export const LoaderContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 80vh;
-`
-<<<<<<< HEAD
-
 export const FailedView = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,5 +39,3 @@ export const RetryButton = styled.button`
   font-family: Roboto;
   font-size: 15px;
 `
-=======
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76

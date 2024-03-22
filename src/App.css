@@ -11,6 +11,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+<<<<<<< HEAD
 button {
   cursor: pointer;
 }
+=======
+button{
+  cursor: pointer;
+}
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76

@@ -29,6 +29,7 @@ class App extends Component {
     this.setState({activeTab: id})
   }
 
+<<<<<<< HEAD
   addSavedVideo = videoDetails => {
     this.setState(prev => ({
       savedVideos: [...prev.savedVideos, videoDetails],
@@ -52,6 +53,18 @@ class App extends Component {
       this.addSavedVideo(videoDetails)
     } else {
       this.deleteVideosFromSavedVideos(videoDetails)
+=======
+  addSavedVideo = video => {
+    const {savedVideos} = this.state
+
+    const index = savedVideos.findIndex(eachVideo => eachVideo.id === video.id)
+
+    if (index === -1) {
+      this.setState({savedVideos: [...savedVideos, video]})
+    } else {
+      savedVideos.splice(index, 1)
+      this.setState({savedVideos})
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
     }
   }
 
@@ -66,8 +79,11 @@ class App extends Component {
           changeTheme: this.changeTheme,
           changeTab: this.changeTab,
           addSavedVideo: this.addSavedVideo,
+<<<<<<< HEAD
           deleteVideosFromSavedVideos: this.deleteVideosFromSavedVideos,
           updateSave: this.updateSave,
+=======
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
         }}
       >
         <Switch>
@@ -76,8 +92,17 @@ class App extends Component {
           <ProtectedRoute exact path="/trending" component={TrendingVideos} />
           <ProtectedRoute exact path="/gaming" component={GamingVideos} />
           <ProtectedRoute exact path="/saved-videos" component={SavedVideos} />
+<<<<<<< HEAD
           <ProtectedRoute exact path="/videos/:id" component={VideoItemDetails} />
           <Route exact path="/not-found" component={NotFound} />
+=======
+          <ProtectedRoute
+            exact
+            path="/videos/:id"
+            component={VideoItemDetails}
+          />
+          <Route path="/not-found" component={NotFound} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
           <Redirect to="not-found" />
         </Switch>
       </NxtWatchContext.Provider>

@@ -7,7 +7,11 @@ import {AiOutlineClose, AiOutlineSearch} from 'react-icons/ai'
 
 import Header from '../Header'
 import NavigationSideBar from '../NavigationSideBar'
+<<<<<<< HEAD
 // import FailureView from '../FailureView'
+=======
+import FailureView from '../FailureView'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 import HomeVideos from '../HomeVideos'
 
 import {
@@ -23,11 +27,14 @@ import {
   SearchInput,
   SearchIconContainer,
   LoaderContainer,
+<<<<<<< HEAD
   FailedView,
   FailedImage,
   FailedHeading,
   FailedNote,
   RetryButton,
+=======
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 } from './styledComponents'
 
 import NxtWatchContext from '../../context/NxtWatchContext'
@@ -44,7 +51,11 @@ class Home extends Component {
     homeVideos: [],
     searchInput: '',
     apiStatus: apiStatusConstants.initial,
+<<<<<<< HEAD
     bannerDisplay: true,
+=======
+    bannerDisplay: 'flex',
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
   }
 
   componentDidMount() {
@@ -66,7 +77,11 @@ class Home extends Component {
   }
 
   onCloseBanner = () => {
+<<<<<<< HEAD
     this.setState({bannerDisplay: false})
+=======
+    this.setState({bannerDisplay: 'none'})
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
   }
 
   getVideos = async () => {
@@ -119,6 +134,7 @@ class Home extends Component {
     </LoaderContainer>
   )
 
+<<<<<<< HEAD
   renderFailureView = () => (
     <NxtWatchContext.Consumer>
       {value => {
@@ -149,6 +165,9 @@ class Home extends Component {
       }}
     </NxtWatchContext.Consumer>
   )
+=======
+  renderFailureView = () => <FailureView onRetry={this.onRetry} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 
   renderHomeVideos = () => {
     const {apiStatus} = this.state
@@ -174,12 +193,17 @@ class Home extends Component {
 
           const bgColor = isDarkTheme ? '#181818' : '#f9f9f9'
           const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
+<<<<<<< HEAD
+=======
+          const display = bannerDisplay === 'flex' ? 'flex' : 'none'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 
           return (
             <>
               <Header />
               <NavigationSideBar />
               <HomeContainer data-testid="home" bgColor={bgColor}>
+<<<<<<< HEAD
                 {bannerDisplay && (
                   <BannerContainer data-testid="banner">
                     <BannerLeftPart>
@@ -202,6 +226,28 @@ class Home extends Component {
                     </BannerRightPart>
                   </BannerContainer>
                 )}
+=======
+                <BannerContainer data-testid="banner" display={display}>
+                  <BannerLeftPart>
+                    <BannerImage
+                      src="https://assets.ccbp.in/frontend/react-js/nxt-watch-logo-light-theme-img.png"
+                      alt="nxt watch logo"
+                    />
+                    <BannerText display={display}>
+                      Buy Nxt Watch Premium prepaid plans with <br /> UPI
+                    </BannerText>
+                    <BannerButton type="button">GET IT NOW</BannerButton>
+                  </BannerLeftPart>
+                  <BannerRightPart>
+                    <BannerCloseButton
+                      data-testid="close"
+                      onClick={this.onCloseBanner}
+                    >
+                      <AiOutlineClose size={25} />
+                    </BannerCloseButton>
+                  </BannerRightPart>
+                </BannerContainer>
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
                 <SearchContainer>
                   <SearchInput
                     type="search"

@@ -38,7 +38,11 @@ const PlayVideoView = props => {
   return (
     <NxtWatchContext.Consumer>
       {value => {
+<<<<<<< HEAD
         const {isDarkTheme, savedVideos, updateSave} = value
+=======
+        const {isDarkTheme, savedVideos, addSavedVideo} = value
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
         const textColor = isDarkTheme ? '#64748b' : '#64748b'
         let isSaved
         const index = savedVideos.findIndex(
@@ -52,7 +56,11 @@ const PlayVideoView = props => {
         const saveIconColor = isSaved ? '#2563eb' : textColor
 
         const onClickSave = () => {
+<<<<<<< HEAD
           updateSave(videoDetails)
+=======
+          addSavedVideo(videoDetails)
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
         }
 
         const updatedDate = formatDistanceToNowStrict(
@@ -110,7 +118,11 @@ const PlayVideoView = props => {
                 </BtnContainer>
               </PlaySocialButtonsContainer>
             </PlayVideoStatusContainer>
+<<<<<<< HEAD
             <HrLine color={isDarkTheme ? '#2563eb' : '#94a3b8'} />
+=======
+            <HrLine color={isLiked ? '#2563eb' : '#94a3b8'} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
             <ChannelContainer>
               <ChannelImage
                 src={videoDetails.profileImageUrl}

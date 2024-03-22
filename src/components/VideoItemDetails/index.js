@@ -4,10 +4,15 @@ import Loader from 'react-loader-spinner'
 
 import Header from '../Header'
 import NavigationSideBar from '../NavigationSideBar'
+<<<<<<< HEAD
+=======
+import FailureView from '../FailureView'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 import PlayVideoView from '../PlayVideoView'
 
 import NxtWatchContext from '../../context/NxtWatchContext'
 
+<<<<<<< HEAD
 import {
   VideoDetailViewContainer,
   LoaderContainer,
@@ -17,6 +22,9 @@ import {
   FailedNote,
   RetryButton,
 } from './styledComponents'
+=======
+import {VideoDetailViewContainer, LoaderContainer} from './styledComponents'
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -96,8 +104,13 @@ class VideoItemDetails extends Component {
   }
 
   renderLoadingView = () => (
+<<<<<<< HEAD
     <LoaderContainer data-testid='loader'>
       <Loader type='ThreeDots' color='#0b69ff' height='50' width='50' />
+=======
+    <LoaderContainer data-testid="loader">
+      <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
     </LoaderContainer>
   )
 
@@ -119,6 +132,7 @@ class VideoItemDetails extends Component {
     this.getVideoDetails()
   }
 
+<<<<<<< HEAD
   renderFailureView = () => (
     <NxtWatchContext.Consumer>
       {value => {
@@ -149,6 +163,9 @@ class VideoItemDetails extends Component {
       }}
     </NxtWatchContext.Consumer>
   )
+=======
+  renderFailureView = () => <FailureView onRetry={this.onRetry} />
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
 
   renderVideoDetailView = () => {
     const {apiStatus} = this.state
@@ -177,7 +194,11 @@ class VideoItemDetails extends Component {
               <Header />
               <NavigationSideBar />
               <VideoDetailViewContainer
+<<<<<<< HEAD
                 data-testid='videoItemDetails'
+=======
+                data-testid="videoItemDetails"
+>>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
                 bgColor={bgColor}
               >
                 {this.renderVideoDetailView()}
