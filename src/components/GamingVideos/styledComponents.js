@@ -58,10 +58,6 @@ export const LoaderContainer = styled.div`
   align-items: center;
   min-height: 80vh;
 `
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
 export const FailedView = styled.div`
   display: flex;
@@ -102,8 +98,3 @@ export const RetryButton = styled.button`
   font-family: Roboto;
   font-size: 15px;
 `
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f

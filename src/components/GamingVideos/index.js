@@ -7,13 +7,9 @@ import {SiYoutubegaming} from 'react-icons/si'
 import Header from '../Header'
 import NavigationSideBar from '../NavigationSideBar'
 import NxtWatchContext from '../../context/NxtWatchContext'
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
+
 import FailureView from '../FailureView'
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
+
 import GameVideoCard from '../GameVideoCard'
 
 import {
@@ -23,20 +19,6 @@ import {
   GamingVideoList,
   GamingText,
   LoaderContainer,
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
-  FailedView,
-  FailedImage,
-  FailedHeading,
-  FailedNote,
-  RetryButton,
-<<<<<<< HEAD
-=======
-=======
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 } from './styledComponents'
 
 const apiStatusConstants = {
@@ -105,46 +87,7 @@ class GamingVideos extends Component {
     this.getVideos()
   }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
-  renderFailureView = () => (
-    <NxtWatchContext.Consumer>
-      {value => {
-        const {isDarkTheme} = value
-        const headingColor = isDarkTheme ? '#f1f5f9' : '#1e293b'
-
-        const noteColor = isDarkTheme ? '#e2e8f0' : '#475569'
-
-        const FailureImageUrl = isDarkTheme
-          ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-dark-theme-img.png'
-          : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-failure-view-light-theme-img.png'
-
-        return (
-          <FailedView>
-            <FailedImage src={FailureImageUrl} alt="failure view" />
-            <FailedHeading headingColor={headingColor}>
-              Oops! Something Went Wrong
-            </FailedHeading>
-            <FailedNote noteColor={noteColor}>
-              We are having some trouble to complete your request. <br /> Please
-              try again later.
-            </FailedNote>
-            <RetryButton type="button" onClick={this.onRetry}>
-              Retry
-            </RetryButton>
-          </FailedView>
-        )
-      }}
-    </NxtWatchContext.Consumer>
-  )
-<<<<<<< HEAD
-=======
-=======
   renderFailureView = () => <FailureView onRetry={this.onRetry} />
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
   renderGamingVideos = () => {
     const {apiStatus} = this.state

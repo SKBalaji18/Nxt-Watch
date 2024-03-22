@@ -18,13 +18,8 @@ const NotFound = () => (
       const noteColor = isDarkTheme ? '#e2e8f0' : '#475569'
 
       const notFoundImageUrl = isDarkTheme
-<<<<<<< HEAD
         ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-dark-theme-img.png'
         : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png'
-=======
-        ? 'https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-light-theme-img.png'
-        : 'https://assets.ccbp.in/frontend/react-js/nxt-watch-not-found-dark-theme-img.png'
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 
       return (
         <>
@@ -32,15 +27,7 @@ const NotFound = () => (
           <NavigationSideBar />
           <NotFoundContainer bgColor={bgColor}>
             <NotFoundVideosView>
-<<<<<<< HEAD
               <NotFoundVideosImage src={notFoundImageUrl} alt="not found" />
-=======
-<<<<<<< HEAD
-              <NotFoundVideosImage src={notFoundImageUrl} alt="not found" />
-=======
-              <NotFoundVideosImage src={notFoundImageUrl} alt='not found' />
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
               <NotFoundVideosHeading headingColor={headingColor}>
                 Page Not Found
               </NotFoundVideosHeading>
