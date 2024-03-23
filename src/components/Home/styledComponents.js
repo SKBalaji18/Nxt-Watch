@@ -17,15 +17,7 @@ export const BannerContainer = styled.div`
   background-size: cover;
   background-position: center;
   height: 200px;
-<<<<<<< HEAD
   display: flex;
-=======
-<<<<<<< HEAD
-  display: flex;
-=======
-  display: ${props => props.display};
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   justify-content: space-between;
   padding: 20px;
   @media screen and (min-width: 768px) {
@@ -49,33 +41,15 @@ export const BannerButton = styled.button`
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-<<<<<<< HEAD
   border: 1.5px solid #000000;
   color: #000000;
   font-weight: 500;
-=======
-<<<<<<< HEAD
-  border: 1.5px solid #000000;
-  color: #000000;
-  font-weight: 500;
-=======
-  border: 1px solid #000000;
-  color: #000000;
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   background: none;
 `
 export const BannerText = styled.p`
   font-family: 'Roboto';
   font-size: 15px;
   color: #000000;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-  display: ${props => props.display};
->>>>>>> ca4c6f3f535ea3edb698a15d38b2d3943b852a76
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
   @media screen and (min-width: 576px) {
     font-size: 20px;
   }
@@ -84,10 +58,7 @@ export const BannerCloseButton = styled.button`
   border: none;
   background: none;
   height: 25px;
-<<<<<<< HEAD
   align-self: flex-start;
-=======
->>>>>>> 1da8f561cb4467091f9a605a98db52c3c997826f
 `
 
 export const SearchContainer = styled.div`
